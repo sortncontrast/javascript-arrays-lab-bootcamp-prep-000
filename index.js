@@ -59,8 +59,7 @@ prependKitten('Arnold');
 //Test 8: Remove Last Kitten in New Array
 
 function removeLastKitten() {
-  var newKittens = [...kittens];
-  newKittens.pop();
+  var newKittens = kittens.slice(0, kittens.length - 1);
   return newKittens;
 }
 
